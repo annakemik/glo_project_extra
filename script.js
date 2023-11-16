@@ -1,15 +1,12 @@
-let num = 266219;
-
-const stringFromNumber = num.toString();
-
-let result = 1;
-
-for (let i = 0; i < stringFromNumber.length; i++) {
-  result *= stringFromNumber[i];
-}
-
-result **= 3;
-
-let newString = result.toString();
-
-result = console.log(newString[0] + newString[1]);
+const wordCorrection = function (word) {
+  if (typeof word !== "string") {
+    console.log("Not a string!");
+  } else {
+    word = word.trim();
+    if (word.length >= 30) {
+      return word.slice(0, 29) + "...";
+    } else {
+      return word;
+    }
+  }
+};
