@@ -1,8 +1,7 @@
 const arr = ["3584938", "8292", "492857", "4833", "920", "232", "58292"];
 
 for (let i = 0; i < arr.length; i++) {
-  let num = Number(arr[i].charAt(0));
-  if (num == 2 || num == 4) console.log(arr[i]);
+  if (arr[i][0] == "2" || arr[i][0] == "4") console.log(arr[i]);
 }
 
 const isSimple = function (number) {
